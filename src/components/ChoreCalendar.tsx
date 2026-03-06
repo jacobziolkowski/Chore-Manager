@@ -11,9 +11,9 @@ import { getOccurrences, formatDate, formatDuration } from '../utils/recurrence'
 type CalendarView = 'timeGridWeek' | 'timeGridDay' | 'listMonth';
 
 const PRIORITY_COLOR: Record<string, string> = {
-  high: '#ef4444',
-  medium: '#f59e0b',
-  low: '#10b981',
+  high:   '#FF3B30', // Apple Red
+  medium: '#FF9500', // Apple Orange
+  low:    '#34C759', // Apple Green
 };
 
 interface EventMeta {

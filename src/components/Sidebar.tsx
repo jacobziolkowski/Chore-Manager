@@ -18,11 +18,6 @@ const PRIORITY_LABEL: Record<string, string> = {
   low: 'Low',
 };
 
-const PRIORITY_COLOR: Record<string, string> = {
-  high: '#ef4444',
-  medium: '#f59e0b',
-  low: '#10b981',
-};
 
 const RECURRENCE_LABEL: Record<string, string> = {
   none: 'Once',
@@ -93,10 +88,7 @@ export default function Sidebar({
                 return (
                   <li key={chore.id} className="chore-item">
                     <div className="chore-item__header">
-                      <span
-                        className="priority-badge"
-                        style={{ background: PRIORITY_COLOR[chore.priority] }}
-                      >
+                      <span className={`priority-badge priority-badge--${chore.priority}`}>
                         {PRIORITY_LABEL[chore.priority]}
                       </span>
                       <span className="chore-item__title">{chore.title}</span>
