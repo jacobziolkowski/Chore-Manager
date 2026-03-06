@@ -63,7 +63,7 @@ export default function Sidebar({
           className={`sidebar-tab${tab === 'team' ? ' sidebar-tab--active' : ''}`}
           onClick={() => setTab('team')}
         >
-          Team ({members.length})
+          Household ({members.length})
         </button>
       </div>
 
@@ -125,7 +125,7 @@ export default function Sidebar({
             <input
               className="form-input"
               type="text"
-              placeholder="Member name…"
+              placeholder="Household member name…"
               value={newMemberName}
               onChange={(e) => setNewMemberName(e.target.value)}
             />
@@ -134,7 +134,7 @@ export default function Sidebar({
             </button>
           </form>
           {members.length === 0 ? (
-            <div className="sidebar-empty">No team members yet.</div>
+            <div className="sidebar-empty">No household members yet.</div>
           ) : (
             <ul className="member-list">
               {members.map((m) => {

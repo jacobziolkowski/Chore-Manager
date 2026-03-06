@@ -16,8 +16,8 @@ export default function Header({ view, onViewChange, onAddChore }: Props) {
   return (
     <header className="header">
       <div className="header-left">
-        <span className="header-icon">🧹</span>
-        <h1 className="header-title">Office Chores</h1>
+        <span className="header-icon">🏠</span>
+        <h1 className="header-title">Home Chores</h1>
       </div>
       <div className="header-center">
         <div className="view-switcher">
